@@ -5,7 +5,7 @@ Comparison between pytest and unittes test frameworks
 
 | Feature                    | Pytest                             | Unittest                         | Winner   |
 |----------------------------|------------------------------------|----------------------------------|----------|
-| Installation               |                        |                        |  |
+| Installation               | Third Party                        | Built in                         |Unittest  |
 | Basic Infra                |              |                       |    |
 | Basic Assertion            |                     |         |    |
 | Flat is better than nested |                  |                  |    |

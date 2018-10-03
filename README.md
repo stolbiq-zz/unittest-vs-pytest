@@ -8,7 +8,7 @@ Comparison between pytest and unittes test frameworks
 | Installation               | Third Party                        | Built in                         |Unittest  |
 | Basic Infrastructure       | Can be only a function             | Inheritance                      |Pytest    |
 | Basic Assertion            | Builtin assert                     | TestCase instance methods        |Pytest    |
-| Flat is better than nested |                  |                  |    |
+| Flat is better than nested | Function (1 level)                 | Method (2 level)                 |Pytest    |
 | Can run each other test    |             |                 |    |
 | Test Result on console     |       |     |    |
 | Multi param test           |        |   |    |

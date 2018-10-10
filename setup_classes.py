@@ -6,7 +6,7 @@ class DBBase:
     def __init__(self):
         """Creates an instance"""
         self.count = self._counter
-        self._counter += 1
+        type(self)._counter += 1
         print(f'\n\n###################### {self._open_msg}: {self.count}')
 
     def close(self):

@@ -1,6 +1,12 @@
 from unittest import TestCase
 
+from setup_classes import Session
+
 class Setup1TestCase(TestCase):
+
+    def setUp(self):
+        Session()
+
     def test_db_save(self):
         """Test db save"""
         print('######## running save')

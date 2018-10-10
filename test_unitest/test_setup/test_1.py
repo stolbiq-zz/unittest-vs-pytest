@@ -8,3 +8,6 @@ class Setup1TestCase(SetupBaseTestCase):
     def test_db_delete(self):
         """Test db deletion"""
         print('######## running delete')
+
+    def test_non_db(self):
+        print('######## non db test')

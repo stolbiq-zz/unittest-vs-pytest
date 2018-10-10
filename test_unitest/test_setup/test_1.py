@@ -5,7 +5,10 @@ from setup_classes import Session
 class Setup1TestCase(TestCase):
 
     def setUp(self):
-        Session()
+        self.session = Session()
+
+    def tearDown(self):
+        self.session.close()
 
     def test_db_save(self):
         """Test db save"""

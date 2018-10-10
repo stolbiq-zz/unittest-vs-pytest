@@ -1,3 +1,10 @@
+import pytest
+from setup_classes import Session
+
+@pytest.fixture
+def session():
+    Session()
+
 def test_db_save(self):
     """Test db save"""
     print('######## running save')

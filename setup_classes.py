@@ -6,12 +6,12 @@ class DBBase:
     def __init__(self):
         """Creates an instance"""
         self.count = self._counter
-        type(self)._counter += 1
-        print(f'\n {self._open_msg}: {self.count}')
+        self._counter += 1
+        print(f'\n\n###################### {self._open_msg}: {self.count}')
 
     def close(self):
         """Closes instance"""
-        print(f'\n{self._close_msg}: {self.count}')
+        print(f'\n\n###################### {self._close_msg}: {self.count}')
 
 
 class Connection(DBBase):

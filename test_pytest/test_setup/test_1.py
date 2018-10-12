@@ -1,13 +1,11 @@
 import pytest
 
-@pytest.mark.usefixtures('session')
+pytestmark = pytest.mark.usefixtures('session')
+
 def test_db_save():
     """Test db save"""
     print('######## running save')
 
-def test_db_delete(session):
+def test_db_delete():
     """Test db deletion"""
     print('######## running delete')
-
-def test_non_db():
-    print('######## non db test')

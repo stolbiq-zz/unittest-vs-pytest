@@ -1,4 +1,7 @@
-def test_db_save(session):
+import pytest
+
+@pytest.mark.usefixtures('session')
+def test_db_save():
     """Test db save"""
     print('######## running save')
 

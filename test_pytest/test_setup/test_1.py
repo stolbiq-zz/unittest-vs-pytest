@@ -1,12 +1,3 @@
-import pytest
-from setup_classes import Session
-
-@pytest.fixture
-def session():
-    session = Session()
-    yield session
-    session.close()
-
 def test_db_save(session):
     """Test db save"""
     print('######## running save')

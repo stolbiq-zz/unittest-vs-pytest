@@ -9,7 +9,7 @@ def session():
     yield session
     session.close()
 
-@pytest.fixture
+@pytest.fixture(scope='function', autouse=True)
 def connection():
     connection = Connection()
     yield connection

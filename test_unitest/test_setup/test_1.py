@@ -12,6 +12,7 @@ class Setup1TestCase(SetupBaseTestCase):
         """Test db deletion"""
         print('######## running delete')
 
+    @pytest.mark.non_db
     def test_non_db(self):
         """Test non db"""
         print('######## non db test')

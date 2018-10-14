@@ -15,7 +15,7 @@ Comparison between pytest and unittes test frameworks
 | Test setup                 | Fixture: module, session, function | Template methode: setUp, tearDown|Pytest    |
 | Name Refactoring           | Poor, because of name conventions  | Rich, regular object orientaition|Unittest  |
 | Running Failed Tests       | Build in --ff, --lf                | Your own way                     |Pytest    |
-| Marks                      |                          |                      |    |
+| Marks                      | Use marks                          | Your own way                     |Pytest    |
 
 
 Hii

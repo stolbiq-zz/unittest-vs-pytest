@@ -1,18 +1,19 @@
 from unittest import TestCase
 
-from setup_classes import Session, Connection
+from setup_classes import Connection, Session
+
 
 class SetupBaseTestCase(TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.connection = Connection()
+        cls.conn = Connection()
 
     @classmethod
     def tearDownClass(cls):
-        cls.connection.close()
+        cls.conn.close()
 
     def setUp(self):
-        self.session = Session()
+        self.sess = Session()
 
     def tearDown(self):
-        self.session.close()
+        self.sess.close()

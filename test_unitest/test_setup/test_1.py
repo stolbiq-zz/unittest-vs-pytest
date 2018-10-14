@@ -1,4 +1,7 @@
+import pytest
+
 from test_unitest.test_setup.base import SetupBaseTestCase
+
 
 class Setup1TestCase(SetupBaseTestCase):
     def test_db_save(self):
@@ -10,4 +13,5 @@ class Setup1TestCase(SetupBaseTestCase):
         print('######## running delete')
 
     def test_non_db(self):
+        """Test non db"""
         print('######## non db test')

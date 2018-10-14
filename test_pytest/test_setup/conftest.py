@@ -9,6 +9,7 @@ def session():
     yield session
     session.close()
 
+
 @pytest.fixture(scope='session', autouse=True)
 def connection():
     connection = Connection()

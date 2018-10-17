@@ -16,6 +16,3 @@ Comparison between pytest and unittes test frameworks
 | Name Refactoring           | Poor, because of name conventions  | Rich, regular object orientaition|Unittest  |
 | Running Failed Tests       | Build in --ff, --lf                | Your own way                     |Pytest    |
 | Marks                      | Use marks                          | Your own way                     |Pytest    |
-
-
-Hii

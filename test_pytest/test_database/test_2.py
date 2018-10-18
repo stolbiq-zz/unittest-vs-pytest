@@ -7,5 +7,6 @@ def test_data_base_save():
 def test_data_base_delete():
     print('######## running delete')
 
+@pytest.mark.non_database
 def test_non_data_base():
     print('######## non database test')

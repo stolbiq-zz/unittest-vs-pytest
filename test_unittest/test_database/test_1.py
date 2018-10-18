@@ -1,6 +1,7 @@
 from unittest import TestCase
+import pytest
 
-from base import SetupBaseTestCase
+from test_unittest.test_database.base import SetupBaseTestCase
 
 class Setup1TestCase(SetupBaseTestCase):
 

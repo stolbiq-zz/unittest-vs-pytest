@@ -1,22 +1,9 @@
 from unittest import TestCase
 
-from database_classes import Session, Connection
+from base import SetupBaseTestCase
 
-class Setup1TestCase(TestCase):
+class Setup1TestCase(SetupBaseTestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        cls.connection = Connection()
-
-    @classmethod
-    def tearDownClass(cls):
-        cls.connection.close()
-
-    def setUp(self):
-        self.session = Session()
-
-    def tearDown(self):
-        self.session.close()
 
     def test_data_base_save(self):
         print('######## running save')

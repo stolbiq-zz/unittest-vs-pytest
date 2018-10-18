@@ -1,4 +1,9 @@
-class Setup2TestCase():
+from unittest import TestCase
+
+from base import SetupBaseTestCase
+
+class Setup2TestCase(SetupBaseTestCase):
+
     def test_data_base_save_2(self):
         print('######## running save 2')
 

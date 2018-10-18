@@ -4,4 +4,5 @@ from unittest import TestCase
 class MultiParamTestCase(TestCase):
     def test_multi_param_stuff(self):
         for i in range(10):
-            self.assertEqual(0, i)
+            with self.subTest(i):
+                self.assertEqual(0, i)

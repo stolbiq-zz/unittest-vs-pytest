@@ -10,4 +10,3 @@ class BasicTestCase(TestCase):
 
     def test_string(self):
         self.assertEqual('unitest', 'unittest')
-

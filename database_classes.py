@@ -14,14 +14,14 @@ class DataBase:
 
 class Connection(DataBase):
     _counter = 1
-    _open_message = 'Opening Costly DataBase Connection'
-    _close_message = 'Closing Costly DataBase Connection'
+    _open_message = '######### Opening Costly DataBase Connection'
+    _close_message = '######### Closing Costly DataBase Connection'
 
 
 class Session(DataBase):
     _counter = 1
-    _open_message = 'Opening Cheap DataBase Session'
-    _close_message = 'Rolling Back Cheap DataBase Session'
+    _open_message = '######### Opening Cheap DataBase Session'
+    _close_message = '######### Rolling Back Cheap DataBase Session'
 
 
 if __name__ == '__main__':

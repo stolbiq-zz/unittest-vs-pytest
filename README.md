@@ -7,8 +7,8 @@ Comparison between pytest and unittes test frameworks
 |----------------------------|------------------------------------|----------------------------------|----------|
 | Installation               |Third Party                        |Build In                        |Unittest  |
 | Basic infrastructure       |Can be only a function            |Inheritance      |Pytest    |
-| Can run each other test    |             |                 |    |
-| Test Result on console     |       |     |    |
+| Can run each other test    |Can run unittest tests             |Can't run pytest test       |Pytest    |
+| Test Result on console     |Error Highlight, code snippet       |Only line error, no highlight     |Pytest    |
 | Multi param test           |        |   |    |
 | Test setup                 |  |  |    |
 | Running Failed Tests       |              |                      |    |

@@ -5,7 +5,7 @@ Comparison between pytest and unittes test frameworks
 
 | Feature                    | Pytest                             | Unittest                         | Winner   |
 |----------------------------|------------------------------------|----------------------------------|----------|
-| Installation               |                        |                        |  |
+| Installation               |Third Party                        |Build In                        |Unittest  |
 | Basic infrastructure                |              |                       |    |
 | Can run each other test    |             |                 |    |
 | Test Result on console     |       |     |    |

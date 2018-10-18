@@ -1,6 +1,6 @@
 import pytest
 
-from database_classes import Session
+from database_classes import Session, Connection
 
 
 @pytest.fixture
@@ -8,3 +8,10 @@ def session():
     session = Session()
     yield session
     session.close()
+
+@pytest.fixture(scope='session', autouse=True)
+def connection():
+    connection = Connection()
+    yield connection
+    connection.close()
+

@@ -10,7 +10,7 @@ Comparison between pytest and unittes test frameworks
 | Can run each other test    |Can run unittest tests             |Can't run pytest test       |Pytest    |
 | Test Result on console     |Error Highlight, code snippet       |Only line error, no highlight     |Pytest    |
 | Multi param test           |Parametrize, keep flat        | Sub-test, increase nesting  | Pytest   |
-| Test setup                 |  |  |    |
+| Test setup                 | fixture: module, session, function | Template Method: setup, tearDown | Pytest   |
 | Running Failed Tests       |              |                      |    |
 | Marks                      |                          |                      |    |
 | Patching                      |                          |                      |    |

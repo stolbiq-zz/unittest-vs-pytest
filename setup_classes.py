@@ -1,29 +1,27 @@
-class DBBase:
+class DataBase:
     _counter = None
-    _open_msg = None
-    _close_msg = None
+    _open_message = None
+    _close_message = None
 
     def __init__(self):
-        """Creates an instance"""
         self.count = self._counter
         type(self)._counter += 1
-        print(f'\n {self._open_msg}: {self.count}')
+        print(f'\n {self._open_message}: {self.count}')
 
     def close(self):
-        """Closes instance"""
-        print(f'\n{self._close_msg}: {self.count}')
+        print(f'\n{self._close_message}: {self.count}')
 
 
-class Connection(DBBase):
+class Connection(DataBase):
     _counter = 1
-    _open_msg = 'Opening Costly DB Connection'
-    _close_msg = 'Closing Costly DB Connection'
+    _open_message = 'Opening Costly DataBase Connection'
+    _close_message = 'Closing Costly DataBase Connection'
 
 
-class Session(DBBase):
+class Session(DataBase):
     _counter = 1
-    _open_msg = 'Opening Cheap DB Session'
-    _close_msg = 'Rolling Back Cheap DB Session'
+    _open_message = 'Opening Cheap DataBase Session'
+    _close_message = 'Rolling Back Cheap DataBase Session'
 
 
 if __name__ == '__main__':
